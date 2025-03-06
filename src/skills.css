@@ -1,0 +1,23 @@
+.Skills{
+    display: flex;
+    gap: 500px;
+    gap: 10px;
+    h1{
+        color: #00bfff;
+        text-shadow: 2px 2px 8px rgba(0,191,255,0.8);
+    }
+    img{
+        flex: 1fr;
+        margin-left: 150px;
+        width: 300px;
+        height: 80%;
+        padding: 20px;
+    }
+    .content{
+        width: 600px;
+        flex: 1fr;
+        padding: 20px;
+    }ul{
+        list-style-type: none;
+    }
+}

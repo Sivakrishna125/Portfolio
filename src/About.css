@@ -1,0 +1,22 @@
+.about-section{
+    display: flex;
+    gap: 500px;
+    gap: 10px;
+    img{
+        flex: 1fr;
+        margin-left: 300px;
+        width: 250px;
+        height: 80%;
+        padding: 20px;
+    }
+    p{
+        width: 600px;
+        flex: 1fr;
+        padding: 20px;
+    }
+    
+}
+h1{
+        color: #00bfff;
+        text-shadow: 2px 2px 8px rgba(0,191,255,0.8);
+    }

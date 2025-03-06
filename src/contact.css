@@ -1,6 +1,7 @@
 .Contact{
     display: flex;
     gap: 10px;
+    font-family: "Sigmar",serif;
     h1{
         color: #00bfff;
         text-shadow: 2px 2px 8px rgba(0,191,255,0.8);

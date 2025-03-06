@@ -2,6 +2,7 @@
     display: flex;
     gap: 500px;
     gap: 10px;
+    font-family: "Sigmar",serif;
     img{
         flex: 1fr;
         margin-left: 300px;

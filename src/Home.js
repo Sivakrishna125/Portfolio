@@ -7,16 +7,9 @@ import './Home.css'
 import myphoto from './my-photo.jpg'
 
 function Home() {
-  let home_data='Hi! I am Siva Krishna';
   const [vSection,setVSection]=useState();
   return (
     <>
-    <div className='welcome-slide'>
-      <label><h1>{home_data}</h1></label>
-      <br></br>
-      <br></br>
-      <label><h2>Wait....</h2></label>
-    </div>
     <div className='Home'>
         <div className='header'>
             <label className='name'><h1>Siva Krishna</h1></label>
@@ -29,9 +22,15 @@ function Home() {
               <button onClick={()=> setVSection('Certifications')}>Certifications</button>
         </div>
         <div className='Middle-section'>
-            {!vSection && <p className='intro'>
-              <img src={myphoto} alt='myphoto'></img><br></br>
-              Welcome to my Portfolio</p>}
+          
+            {!vSection && <div className='intro'>
+              <img src={myphoto} alt='myphoto' className='side-right'></img>
+              <pre className='slide-left'>
+                <h3>Hi!
+                I am</h3><h1>Siva Krishna.</h1>
+                <h3>From</h3><h1>2<sup>nd</sup> Year CSE_DS</h1><br></br>
+                <h3>Welcome to</h3><h1>My Portfolio</h1> 
+              </pre></div>}
             {vSection==='skills' && <Skills/>}
             {vSection==='contact' && <Contact/>}
             {vSection==='About' && <About/>}

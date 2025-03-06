@@ -1,18 +1,23 @@
 .certificates{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: "Sigmar",serif;
 }
 h1{
         color: #00bfff;
         text-shadow: 2px 2px 8px rgba(0,191,255,0.8);
     }
 .card{
+    flex: 1 1 calc(33.33%-20px);
     background: rgba(10,25,47,0.8);
     border: 1px solid #00bfff;
     padding: 20px;
     transition: transform 0.3s ease,box-shadow 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
 }
 .card:hover{
     transform: translateY(-10px);
@@ -22,6 +27,6 @@ img{
     width: 300px;
     padding: 20px;
     text-align: center;
-    flex: 1;
     margin: 0 10px;
+    flex: 1fr;
 }

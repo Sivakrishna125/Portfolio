@@ -1,5 +1,6 @@
 import React from 'react'
 import oops from './oops.jpg'
+import acm from './ACM_web.jpg'
 import mern_workshop from './mern_workshop.png'
 import codechef from './codechef.jpg'
 import './Certifications.css'
@@ -10,16 +11,20 @@ function Certifications() {
     <div className='certificates'>
       
       <div className='card'>
-        <img src={oops} alt='python OOPS'></img>
+        <img src={oops} alt='python OOPS'></img><br></br>
         <label>Python OOPS</label>
       </div>
       <div className='card'>
-        <img src={mern_workshop} alt='MERN Workshop'></img>
+        <img src={mern_workshop} alt='MERN Workshop'></img><br></br>
         <label>MERN Workshop</label>
       </div>
       <div className='card'>
-        <img src={codechef} alt='codechef'></img>
+        <img src={codechef} alt='codechef'></img><br></br>
         <label>Codechef 500 Difficulty</label>
+      </div>
+      <div className='card'>
+        <img src={acm} alt='acm'></img><br></br>
+        <label>ACM Web Development Worjshop</label>
       </div>
     </div>
     </>

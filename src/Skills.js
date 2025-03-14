@@ -6,29 +6,28 @@ function Skills() {
     const tech_skills={
         'Programming_languages':"C,Python,JAVA",
         'Frontend':'Frontend Technologies : HTML,CSS,JavaScript',
-        'Backend':'Backend : Python',
         'Frameworks':'Frameworks : React,Flask'
     }
   return (
     <>
     <div className='Skills'>
-        <h1>Skills</h1><br></br>
+        <h1>Skills:</h1>
         <ul className='content'>
-          <li>Technical Skills:</li><br></br>
+          
+          <li><b><h2>Technical Skills:</h2></b></li>
             <ul>
-              <li>Programming Languages:
+              <li><b>Programming Languages:</b>
                 <ul>
                   <li>{tech_skills.Programming_languages}</li>
-                </ul> </li><br></br>
-              <li>Web Devlopment:
+                </ul> </li>
+              <li><b>Web Devlopment:</b>
                 <ul>
                   <li>{tech_skills['Frontend']}</li>
-                  <li>{tech_skills['Backend']}</li>
                   <li>{tech_skills['Frameworks']}</li>
                 </ul>
               </li>
             </ul><br></br>
-            <li>Non-Technical Skills:</li><br></br>
+            <li><h2><b>Non-Technical Skills:</b></h2></li>
             <ul>
               <li>Problem Solving</li>
               <li>Fast Learning</li>

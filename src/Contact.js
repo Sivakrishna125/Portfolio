@@ -20,15 +20,17 @@ function Contact() {
     <div className='Contact'>
         <b><h1>Contact:</h1></b>
         <ul className='content'>
-            <li><img className='inner' src={linkedin} alt=''></img><a href={links.Linkedin}>Linkedin</a></li>
-            <li><img className='inner' src={instagram} alt=''></img><a href={links.Instagram}>Instagram</a></li>
-            <li><img className='inner' src={codechef} alt=''></img><a href={links.Codechef}>Codechef</a></li>
-            <li><img className='inner' src={gmail} alt=''></img><a href={links.mail}>Mail</a></li>
-            <li><img className='inner' src={whatsapp} alt=''></img>{links.Whatsapp}</li>
+            <li className='inner'><img  src={linkedin} alt=''></img><a href={links.Linkedin}>Linkedin</a></li>
+            <li className='inner'><img  src={instagram} alt=''></img><a href={links.Instagram}>Instagram</a></li>
+            <li className='inner'><img  src={codechef} alt=''></img><a href={links.Codechef}>Codechef</a></li>
+            <li className='inner'><img  src={gmail} alt=''></img><a href={links.mail}>Mail</a></li>
+            <li className='inner'><img  src={whatsapp} alt=''></img>{links.Whatsapp}</li>
         </ul>
-        <img className='contact-us' src={contact} alt='contact'></img>
-        
+        <div className='img'>
+      <img src={contact} alt='contact'></img>
     </div>
+    </div>
+    
     <p>
       Click on above text to reach me!<br></br>
       For any inquiries or collaboration opportunities, please don't hesitate to reach out. I'm excited to connect and explore new possibilities together!

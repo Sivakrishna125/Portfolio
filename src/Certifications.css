@@ -1,13 +1,15 @@
 .certificates{
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     text-align: center;
     gap: 30px;
     flex-wrap: wrap;
     font-family: "Sigmar",serif;
+    opacity: 1;
 }
 h1{
-        color: #00bfff;
+        color: #ffff;
         text-shadow: 2px 2px 8px rgba(0,191,255,0.8);
     }
 .card{

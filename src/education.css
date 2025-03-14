@@ -1,0 +1,38 @@
+.mid-sec{
+    display: flex;
+    gap: 350px;
+}
+.education{
+    opacity: 0;
+    animation: slide-right 2s forwards .5s;
+
+}
+img{
+    width: 250px;
+    opacity: 0;
+    animation: fade-in 2s forwards .5s;
+}
+.qualifications{
+    width: 400px;
+    padding-left: 100px ;
+    letter-spacing: 1px;
+    h2{
+        color: #ffff;
+        text-shadow: 2px 2px 8px rgba(0,191,255,0.8);
+    }
+}
+
+@keyframes slide-right{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+@keyframes fade-in{
+    to{
+        transform: translate(100px);
+    }
+}

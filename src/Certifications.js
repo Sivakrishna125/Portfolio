@@ -24,7 +24,7 @@ function Certifications() {
       </div>
       <div className='card'>
         <img src={acm} alt='acm'></img><br></br>
-        <label>ACM Web Development Worjshop</label>
+        <label>ACM Web Development Workshop</label>
       </div>
     </div>
     </>

@@ -1,23 +1,30 @@
 .about-section{
     display: flex;
-    gap: 500px;
-    gap: 10px;
+    gap: 5px;
     font-family: "Sigmar",serif;
-    img{
-        flex: 1fr;
+    .img{
         margin-left: 300px;
         width: 250px;
         height: 80%;
-        padding: 20px;
+        padding: 20px 50px;
     }
-    p{
-        width: 600px;
-        flex: 1fr;
+    .content{
+        width: 500px;
+        flex: 1;
         padding: 20px;
+        opacity: 0;
+        animation: slide-right 2s forwards;
     }
-    
 }
+    
+
 h1{
-        color: #00bfff;
+        color: #ffff;
         text-shadow: 2px 2px 8px rgba(0,191,255,0.8);
+}
+@keyframes slide-right{
+    to{
+        opacity: 1;
+        transform: translateX(100px);
     }
+}

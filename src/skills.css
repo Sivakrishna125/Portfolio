@@ -1,16 +1,15 @@
 .Skills{
     display: flex;
-    gap: 500px;
-    gap: 10px;
+    gap: 5px;
     font-family: "Sigmar",serif;
     h1{
-        color: #00bfff;
+        color: #ffff;
         text-shadow: 2px 2px 8px rgba(0,191,255,0.8);
     }
     img{
         flex: 1fr;
         margin-left: 150px;
-        width: 300px;
+        width: 250px;
         height: 80%;
         padding: 20px;
     }
@@ -18,7 +17,10 @@
         width: 600px;
         flex: 1fr;
         padding: 20px;
-    }ul{
+        animation: slide-right 2s forwards .5s;
+        opacity: 0;
+    }
+    ul{
         list-style-type: none;
     }
 }

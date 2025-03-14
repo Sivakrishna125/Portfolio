@@ -3,6 +3,7 @@ import Skills from './Skills'
 import Contact from './Contact'
 import About from './About'
 import Certifications from './Certifications'
+import Education from './education'
 import './Home.css'
 import myphoto from './my-photo.jpg'
 
@@ -17,6 +18,7 @@ function Home() {
         </div>
         <div className='ribbon'>
               <button onClick={()=> setVSection('About')}>About</button>
+              <button onClick={()=> setVSection('education')}>Education</button>
               <button onClick={()=> setVSection('skills')}>Skills</button>
               <button onClick={()=> setVSection('contact')}>Contact</button>
               <button onClick={()=> setVSection('Certifications')}>Certifications</button>
@@ -24,14 +26,15 @@ function Home() {
         <div className='Middle-section'>
           
             {!vSection && <div className='intro'>
-              <img src={myphoto} alt='myphoto' className='side-right'></img>
-              <pre className='slide-left'>
+              <div className='img'><img src={myphoto} alt='myphoto' className='side-right'></img></div>
+              <pre className='content'>
                 <h3>Hi!
                 I am</h3><h1>Siva Krishna.</h1>
                 <h3>From</h3><h1>2<sup>nd</sup> Year CSE_DS</h1><br></br>
                 <h3>Welcome to</h3><h1>My Portfolio</h1> 
               </pre></div>}
             {vSection==='skills' && <Skills/>}
+            {vSection==='education' && <Education/>}
             {vSection==='contact' && <Contact/>}
             {vSection==='About' && <About/>}
             {vSection==='Certifications' && <Certifications/>}
